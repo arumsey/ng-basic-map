@@ -1,0 +1,18 @@
+<ion-view title="Dashboard">
+    <ion-content class="has-header padding">
+        <h1>Address</h1>
+        <div class="location-container">
+            <h3>{{location.name}}</h3>
+            <p>{{location.address}}</p>
+            <p>{{location.phone | phonenumber}}</p>
+        </div>
+        <h1>Map</h1>
+        <div class="location-container">
+            <div class="location-map">
+                <b-map zoom="16" maptype="roadmap" center="origin" markers="location" refresh="showMap">
+                    Loading map...
+                </b-map>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
